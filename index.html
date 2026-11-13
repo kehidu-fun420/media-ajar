@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lab Simulasi Instalasi Penerangan | XI TITL</title>
+<style>
+:root{--bg:#f3f6fb;--card:#fff;--ink:#17243a;--muted:#63728a;--blue:#175cd3;--teal:#087e8b;--line:#dce4ef;--warn:#fff4d6;--good:#e5f7ee;--bad:#ffebeb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 system-ui,Segoe UI,Arial}
+header{background:linear-gradient(120deg,#102a56,#176b87);color:white;padding:25px max(20px,calc((100vw - 1180px)/2))}
+header h1{margin:4px 0;font-size:clamp(24px,4vw,36px)}header p{max-width:850px;color:#dcecff;margin:6px 0}
+.wrap{max-width:1180px;margin:auto;padding:18px}.layout{display:grid;grid-template-columns:260px 1fr;gap:18px}
+nav,.panel,.card{background:var(--card);border:1px solid var(--line);border-radius:15px;box-shadow:0 4px 18px #2038580a}
+nav{padding:14px;height:max-content;position:sticky;top:12px}nav button{width:100%;text-align:left;margin:3px 0}
+button,.btn{border:1px solid #cbd7e7;background:#fff;color:var(--ink);border-radius:9px;padding:9px 12px;cursor:pointer;font-weight:600}
+button:hover,.btn:hover{border-color:var(--blue);color:var(--blue)}button.active,.primary{background:var(--blue);color:#fff;border-color:var(--blue)}
+main{min-width:0}.panel{padding:22px;margin-bottom:16px}.muted,small{color:var(--muted)}.eyebrow{text-transform:uppercase;letter-spacing:.1em;color:var(--teal);font-weight:800;font-size:11px}
+h2{margin:4px 0 12px;font-size:25px}h3{margin:16px 0 8px;font-size:18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+.card{padding:15px}.stat{font-size:27px;font-weight:800;color:var(--blue)}
+.tag{display:inline-block;background:#eaf1ff;color:#174a9c;padding:3px 8px;border-radius:99px;font-size:12px;font-weight:700;margin:2px}
+.notice{background:var(--warn);padding:12px 14px;border-radius:10px;border-left:4px solid #d89b16;margin:12px 0}
+.good{background:var(--good);padding:10px;border-radius:9px}.bad{background:var(--bad);padding:10px;border-radius:9px}
+.row{display:flex;gap:9px;flex-wrap:wrap;align-items:center}.row>*{flex:1}.row button{flex:0 0 auto}
+input,select,textarea{padding:9px;border:1px solid #cbd7e7;border-radius:8px;font:inherit;max-width:100%}
+label{display:block;font-weight:650;margin:8px 0 4px}
+svg{max-width:100%;height:auto}.diagram{background:#f8fbff;border:1px solid var(--line);border-radius:12px;padding:12px;overflow:auto}
+.option{display:block;border:1px solid var(--line);padding:10px;border-radius:9px;margin:7px 0;cursor:pointer}
+.option input{margin-right:8px}.hide{display:none}.progress{height:8px;background:#e5ebf4;border-radius:99px;overflow:hidden}.progress span{display:block;height:100%;background:var(--teal)}
+footer{text-align:center;color:var(--muted);padding:25px}
+table{border-collapse:collapse;width:100%;font-size:14px}td,th{border:1px solid var(--line);padding:8px;text-align:left}th{background:#f0f5fb}
+@media(max-width:780px){.layout{grid-template-columns:1fr}nav{position:static;display:grid;grid-template-columns:repeat(2,1fr)}nav button{font-size:12px}.panel{padding:16px}}
+</style></head>
+<body>
+<header><div class="eyebrow" style="color:#a8e9f0">MEDIA SIMULASI MULTIMEDIA • SMK NEGERI 420 KOPO</div>
+<h1>LAB INSTALASI PENERANGAN LISTRIK</h1><p>Kelas XI • Teknik Instalasi Tenaga Listrik • Tahun Pelajaran 2026/2027</p>
+<p>Belajar melalui animasi konsep, diagram interaktif, studi kasus, perencanaan ruang, diagnosis gangguan, dan asesmen mandiri.</p></header>
+<div class="wrap"><div class="layout">
+<nav id="nav">
+<div class="eyebrow">Navigasi Lab</div>
+<button class="active" data-page="home">⌂ Beranda</button>
+<button data-page="p1">01 · K3 & dasar listrik</button>
+<button data-page="p2">02 · Simbol & komponen</button>
+<button data-page="p3">03 · Simulator sakelar</button>
+<button data-page="p4">04 · Rencana ruangan</button>
+<button data-page="p5">05 · Uji & troubleshooting</button>
+<button data-page="p6">06 · Proyek akhir</button>
+<button data-page="quiz">◎ Evaluasi interaktif</button>
+<button data-page="lkpd">▤ LKPD digital</button>
+</nav>
+<main>
+<section id="home" class="page panel">
+<div class="eyebrow">Ruang belajar digital</div><h2>Selamat datang di Lab Simulasi Instalasi Penerangan</h2>
+<p>Media ini dibuat Untuk Mempermudah Kegiatan Belajar Instalasi Penerangan Listrik XI TITL. Alur belajar mengikuti 18 pertemuan, dari K3 dan besaran listrik hingga proyek akhir.</p>
+<div class="grid">
+<div class="card"><div class="stat">18</div><b>Pertemuan</b><p class="muted">6 JP per pertemuan sesuai pemetaan modul.</p></div>
+<div class="card"><div class="stat">6</div><b>Unit belajar</b><p class="muted">TP 1.1 sampai TP 1.4.</p></div>
+<div class="card"><div class="stat">4</div><b>Simulator utama</b><p class="muted">Sakelar, desain ruang, diagnosis, dan LKPD.</p></div>
+</div>
+<div class="notice"><b>Keselamatan:</b> Seluruh interaksi di media ini adalah simulasi konseptual tanpa tegangan nyata. Media ini bukan instruksi pengawatan instalasi riil. Praktik fisik, perubahan wiring, pengukuran, dan pengujian hanya dilakukan pada trainer, dengan sumber terisolasi, SOP, APD, dan pengawasan langsung guru.</div>
+<h3>Peta pembelajaran 18 pertemuan</h3>
+<table><tr><th>Pert.</th><th>Materi</th><th>Aktivitas media</th><th>Produk/asesmen</th></tr>
+<tr><td>1–2</td><td>K3LH, pengenalan instalasi, besaran listrik</td><td>Kasus keselamatan, kartu konsep, kalkulator daya konseptual</td><td>Checklist K3, LKPD hitung dasar</td></tr>
+<tr><td>3–6</td><td>Simbol, gambar, komponen, penghantar, pengaman</td><td>Galeri komponen, latihan membaca denah dan simbol</td><td>Gambar simbol, identifikasi komponen, kuis</td></tr>
+<tr><td>7–8</td><td>Sakelar tunggal dan seri</td><td>Simulator logika kendali lampu</td><td>Unjuk kerja pada trainer oleh guru</td></tr>
+<tr><td>9</td><td>UTS</td><td>Evaluasi teori dan pembacaan diagram</td><td>Asesmen sumatif tengah semester</td></tr>
+<tr><td>10–11</td><td>Sakelar tukar dan silang</td><td>Simulator kendali dari dua/tiga lokasi</td><td>Analisis diagram dan asesmen praktik</td></tr>
+<tr><td>12–14</td><td>Perencanaan, jalur, perlengkapan, armatur</td><td>Perancang ruang dan daftar komponen</td><td>Denah, BoM, checklist guru</td></tr>
+<tr><td>15</td><td>Pengujian dan troubleshooting</td><td>Diagnosis gejala pada kasus virtual</td><td>LKPD diagnosis</td></tr>
+<tr><td>16–17</td><td>Proyek instalasi sederhana</td><td>Perencanaan dan dokumentasi proyek</td><td>Proposal, laporan, presentasi</td></tr>
+<tr><td>18</td><td>UAS, presentasi, refleksi</td><td>Kuis akhir dan rubrik refleksi</td><td>Demonstrasi proyek dan evaluasi</td></tr></table>
+<h3>Kompetensi yang dituju</h3><ul><li><b>TP 1.1:</b> prinsip dasar, K3LH, bahaya listrik, alat dan SOP.</li><li><b>TP 1.2:</b> komponen, simbol, penghantar, pengaman, denah, diagram satu garis dan pengawatan.</li><li><b>TP 1.3:</b> konsep rangkaian sakelar tunggal, seri, tukar, silang.</li><li><b>TP 1.4:</b> perencanaan ruang, pemeriksaan, pengujian, diagnosis gangguan, dan proyek sederhana.</li></ul>
+<button class="primary" onclick="show('p1')">Mulai belajar →</button>
+</section>
+
+<section id="p1" class="page panel hide"><div class="eyebrow">Unit 1 • TP 1.1 • Pertemuan 1–2</div><h2>K3LH dan dasar instalasi penerangan</h2>
+<p>Instalasi penerangan satu fasa menyuplai titik lampu melalui penghantar, perlengkapan kendali, dan pengaman. Keandalan instalasi ditentukan oleh rancangan, pemilihan komponen, pemeriksaan, serta kepatuhan K3.</p>
+<div class="grid"><div class="card"><b>Tegangan (V)</b><p>Beda potensial listrik antara dua titik.</p></div><div class="card"><b>Arus (I)</b><p>Laju aliran muatan listrik.</p></div><div class="card"><b>Daya (P)</b><p>Laju penggunaan/transfer energi listrik. Untuk beban sederhana: P = V × I.</p></div><div class="card"><b>Energi (E)</b><p>Energi terpakai; untuk daya tetap: E = P × t.</p></div></div>
+<h3>Kalkulator konsep daya</h3><p class="muted">Latihan matematika untuk beban ideal/sederhana, bukan penentuan ukuran kabel atau pengaman instalasi.</p>
+<div class="row"><div><label>Tegangan (V)</label><input id="volt" type="number" value="220" min="1"></div><div><label>Arus (A)</label><input id="amp" type="number" value="0.25" min="0" step=".01"></div><div><label>Waktu (jam)</label><input id="hours" type="number" value="5" min="0" step=".5"></div></div><button class="primary" onclick="calcPower()">Hitung konsep</button><div id="powerout" class="good" style="margin-top:10px">Hasil: daya 55 W; energi 275 Wh (0,275 kWh).</div>
+<h3>Simulasi keputusan K3</h3><p>Area praktik akan digunakan kelompok. Pilih respons paling tepat pada setiap situasi.</p>
+<div id="safetyCase"></div><button class="primary" onclick="checkSafety()">Periksa jawaban</button><div id="safetyResult"></div>
+<div class="notice">Prinsip pengendalian: identifikasi bahaya, gunakan APD sesuai risiko, periksa area dan alat, isolasi sumber sesuai SOP, verifikasi bebas tegangan dengan alat yang sesuai, dan jangan melakukan energisasi tanpa izin/pengawasan guru.</div></section>
+
+<section id="p2" class="page panel hide"><div class="eyebrow">Unit 2 • TP 1.2 • Pertemuan 3–6</div><h2>Simbol, gambar, komponen dan perlengkapan</h2>
+<p>Gambar kerja menghubungkan denah lokasi dengan diagram satu garis dan diagram pengawatan. Gunakan legenda dan spesifikasi komponen, bukan menebak fungsi dari bentuk saja.</p>
+<div class="grid">
+<div class="card"><div class="eyebrow">Kendali</div><h3>Sakelar tunggal</h3><p>Mengendalikan satu kelompok lampu dari satu lokasi.</p><span class="tag">1 kelompok</span></div>
+<div class="card"><div class="eyebrow">Kendali</div><h3>Sakelar seri</h3><p>Mengendalikan dua kelompok lampu secara terpisah dari satu lokasi.</p><span class="tag">2 kelompok</span></div>
+<div class="card"><div class="eyebrow">Kendali</div><h3>Sakelar tukar</h3><p>Memungkinkan satu lampu dikendalikan dari dua lokasi.</p><span class="tag">2 lokasi</span></div>
+<div class="card"><div class="eyebrow">Kendali</div><h3>Sakelar silang</h3><p>Digunakan bersama sakelar tukar untuk kendali dari tiga lokasi.</p><span class="tag">3 lokasi</span></div>
+<div class="card"><div class="eyebrow">Penerangan</div><h3>Lampu & armatur</h3><p>Sumber cahaya dan perlengkapan penopang/pengarahan cahaya.</p></div>
+<div class="card"><div class="eyebrow">Proteksi</div><h3>MCB & PE</h3><p>MCB melindungi rangkaian dari arus lebih sesuai karakteristiknya; PE merupakan penghantar proteksi.</p></div>
+<div class="card"><div class="eyebrow">Penghantar</div><h3>NYA / NYM</h3><p>Jenis penghantar/kabel yang dipilih berdasar kondisi pemasangan dan spesifikasi.</p></div>
+<div class="card"><div class="eyebrow">Perlengkapan</div><h3>Conduit, doos, klem</h3><p>Mendukung perlindungan, penataan, dan pengelolaan jalur instalasi.</p></div></div>
+<h3>Latihan mencocokkan komponen dan fungsi</h3><div id="matchGame"></div><button class="primary" onclick="checkMatch()">Cek pasangan</button><div id="matchResult"></div>
+<h3>Latihan membaca diagram konseptual</h3><div class="diagram"><svg viewBox="0 0 620 190" role="img" aria-label="Diagram blok konseptual sumber, pengaman, sakelar, lampu"><rect x="12" y="55" width="105" height="65" rx="9" fill="#eaf1ff" stroke="#175cd3"/><text x="64" y="83" text-anchor="middle" font-size="14">Sumber</text><text x="64" y="102" text-anchor="middle" font-size="11">1 fasa</text><path d="M117 87 H170 M255 87 H315 M400 87 H465" stroke="#087e8b" stroke-width="3" fill="none"/><rect x="170" y="55" width="85" height="65" rx="9" fill="#fff4d6" stroke="#d89b16"/><text x="212" y="94" text-anchor="middle" font-size="13">Proteksi</text><rect x="315" y="55" width="85" height="65" rx="9" fill="#e5f7ee" stroke="#087e8b"/><text x="357" y="94" text-anchor="middle" font-size="13">Kendali</text><circle cx="510" cy="87" r="32" fill="#fff4d6" stroke="#d89b16" stroke-width="2"/><path d="M489 66 L531 108 M531 66 L489 108" stroke="#d89b16" stroke-width="2"/><text x="510" y="145" text-anchor="middle" font-size="13">Beban lampu</text><text x="310" y="178" text-anchor="middle" font-size="11" fill="#63728a">Diagram blok untuk memahami fungsi, bukan gambar pengawatan.</text></svg></div>
+<div class="notice">Diagram di atas hanya menunjukkan urutan fungsi secara konseptual. Untuk gambar kerja sebenarnya, rujuk simbol/legenda, diagram resmi, datasheet, dan arahan guru.</div>
+</section>
+
+<section id="p3" class="page panel hide"><div class="eyebrow">Unit 3 • TP 1.3 • Pertemuan 7–8 & 10–11</div><h2>Simulator logika rangkaian sakelar</h2>
+<p>Ubah posisi kendali untuk mengamati logika ON/OFF. Simulasi ini tidak menggambarkan terminal, jalur kabel, atau prosedur pemasangan fisik.</p>
+<label>Jenis kendali</label><select id="switchType" onchange="renderSwitch()"><option value="single">Sakelar tunggal — satu lokasi</option><option value="series">Sakelar seri — dua kelompok lampu</option><option value="two">Sakelar tukar — dua lokasi</option><option value="three">Sakelar silang — tiga lokasi</option></select>
+<div id="switchControls" class="grid"></div><div class="grid" id="lampStates"></div>
+<div class="card"><b>Penjelasan logika</b><p id="switchExplain">Satu kendali mengubah keadaan satu kelompok lampu.</p></div>
+<div class="notice">Gunakan simulator untuk memahami fungsi kendali. Jangan menyalin tampilan ini sebagai petunjuk pengawatan. Perakitan dan pengujian nyata hanya dilakukan pada trainer sekolah di bawah pengawasan guru.</div>
+<h3>Tantangan observasi</h3><p id="switchChallenge">Matikan dan nyalakan sakelar, lalu jelaskan perubahan keadaan lampu.</p><textarea id="switchAnswer" rows="3" style="width:100%" placeholder="Tuliskan hasil pengamatan..."></textarea><button onclick="saveObservation()">Simpan catatan</button><span id="obsSaved" class="muted"></span>
+</section>
+
+<section id="p4" class="page panel hide"><div class="eyebrow">Unit 4 • TP 1.4 • Pertemuan 12–14</div><h2>Perancang ruang penerangan</h2>
+<p>Latihan tata letak konseptual: tempatkan titik lampu pada kisi ruang, tentukan kelompok kendali, dan susun daftar komponen awal. Jumlah dan posisi pada latihan ini bukan standar desain iluminasi.</p>
+<div class="row"><div><label>Panjang ruang (m)</label><input id="roomL" type="number" min="2" max="20" value="6"></div><div><label>Lebar ruang (m)</label><input id="roomW" type="number" min="2" max="20" value="4"></div><div><label>Fungsi ruang</label><select id="roomUse"><option>Ruang belajar</option><option>Ruang kerja</option><option>Koridor</option><option>Area praktik</option></select></div></div>
+<button class="primary" onclick="drawRoom()">Buat denah</button>
+<div class="diagram" style="margin-top:12px"><svg id="roomSvg" viewBox="0 0 600 330" aria-label="Denah ruang interaktif"></svg></div>
+<p><b>Tambah titik lampu:</b> klik posisi di dalam denah. Klik titik lampu untuk menghapusnya.</p>
+<div class="grid"><div class="card"><div class="stat" id="lampCount">0</div><b>Titik lampu simulasi</b></div><div class="card"><div class="stat" id="roomArea">24</div><b>Luas ruang (m²)</b></div></div>
+<h3>Daftar kebutuhan awal (BoM konseptual)</h3><div id="bom"></div><button onclick="downloadBoM()">Unduh daftar (CSV)</button>
+<div class="notice">Penentuan tingkat pencahayaan, jumlah/jenis armatur, kapasitas rangkaian, luas penampang penghantar, dan proteksi harus dihitung serta diverifikasi oleh guru/tenaga kompeten menggunakan standar dan data produk yang berlaku. Aplikasi ini tidak melakukan sizing teknis.</div>
+</section>
+
+<section id="p5" class="page panel hide"><div class="eyebrow">Unit 5 • TP 1.4 • Pertemuan 15</div><h2>Pemeriksaan dan troubleshooting konseptual</h2>
+<p>Pilih kasus, tentukan urutan analisis yang aman, dan pilih dugaan penyebab paling masuk akal. Tidak ada tindakan langsung pada instalasi nyata dalam simulasi ini.</p>
+<label>Pilih gejala</label><select id="faultCase" onchange="showFault()"><option value="dark">Lampu tidak menyala, kendali pada posisi ON</option><option value="trip">Proteksi sering trip</option><option value="intermittent">Lampu berkedip/tidak stabil</option><option value="wrong">Kelompok lampu tidak sesuai kendali</option></select>
+<div class="card" id="faultInfo"></div>
+<h3>Pilih prioritas langkah pertama</h3><div id="faultOptions"></div><button class="primary" onclick="checkFault()">Periksa diagnosis</button><div id="faultResult"></div>
+<h3>Checklist pemeriksaan (konsep sesuai RPS/LKPD)</h3><ul><li>Pemeriksaan visual: kerusakan, sambungan terbuka/longgar.</li><li>Kontinuitas penghantar dibandingkan dengan diagram.</li><li>Tahanan isolasi menggunakan alat dan ketentuan uji yang sesuai SOP.</li><li>Polaritas: sakelar memutus penghantar fasa sesuai rancangan.</li><li>Uji fungsi terkontrol setelah pemeriksaan dan izin guru.</li><li>Proteksi sesuai rancangan dan berfungsi.</li></ul>
+<div class="notice">Jika proteksi trip, tercium bau tidak normal, terlihat kerusakan, atau ditemukan bagian terbuka: hentikan aktivitas, jangan mencoba mengaktifkan ulang atau menyentuh instalasi, amankan area dan laporkan kepada guru/teknisi. Diagnosis fisik dilakukan oleh personel kompeten.</div>
+</section>
+
+<section id="p6" class="page panel hide"><div class="eyebrow">Unit 6 • TP 1.4 • Pertemuan 16–17</div><h2>Studio proyek instalasi penerangan</h2>
+<p>Gunakan studio ini untuk menyiapkan proposal proyek satu ruang: kebutuhan, gambar, daftar bahan, pembagian tugas, risiko, dan bukti evaluasi. Realisasi fisik berada di bawah supervisi guru.</p>
+<div class="grid"><div><label>Nama proyek</label><input id="projName" value="Rancangan Penerangan Ruang Praktik"></div><div><label>Kelompok</label><input id="projGroup" placeholder="Nama kelompok"></div></div>
+<label>Fungsi dan karakteristik ruang</label><textarea id="projNeed" rows="2" style="width:100%" placeholder="Jelaskan fungsi ruang dan kebutuhan pengguna..."></textarea>
+<label>Ringkasan rancangan (titik lampu, kendali, lokasi)</label><textarea id="projDesign" rows="3" style="width:100%" placeholder="Tuliskan ringkasan rancangan dan rujukan gambar..."></textarea>
+<label>Daftar bahan/komponen awal</label><textarea id="projBom" rows="3" style="width:100%" placeholder="Nama komponen, spesifikasi berdasarkan datasheet, jumlah..."></textarea>
+<label>Rencana K3 dan persetujuan guru</label><textarea id="projSafety" rows="3" style="width:100%" placeholder="Bahaya, pengendalian, APD, isolasi sumber, verifikasi, supervisi..."></textarea>
+<label>Catatan pemeriksaan dan hasil pengujian oleh guru</label><textarea id="projTest" rows="3" style="width:100%" placeholder="Catat hasil pemeriksaan sesuai SOP, alat, kriteria, dan verifikasi guru..."></textarea>
+<button class="primary" onclick="printProject()">Cetak / simpan proposal PDF</button>
+<h3>Rubrik ringkas mengacu RPS</h3><table><tr><th>Aspek</th><th>Bobot</th><th>Fokus bukti</th></tr><tr><td>Pengetahuan</td><td>20%</td><td>Tes, gambar, hitungan dasar, studi kasus</td></tr><tr><td>Keterampilan praktik</td><td>35%</td><td>Kinerja, kesesuaian gambar, alat ukur, K3</td></tr><tr><td>Proyek</td><td>25%</td><td>Desain, proses, fungsi, diagnosis</td></tr><tr><td>Laporan</td><td>10%</td><td>Gambar, BoM, data uji, analisis</td></tr><tr><td>Presentasi</td><td>5%</td><td>Komunikasi dan argumentasi</td></tr><tr><td>Sikap & K3</td><td>5%</td><td>Disiplin, tanggung jawab, kerja sama, SOP</td></tr></table>
+</section>
+
+<section id="quiz" class="page panel hide"><div class="eyebrow">Asesmen • Formatif dan sumatif</div><h2>Evaluasi interaktif</h2><p>Sepuluh soal campuran dari TP 1.1–1.4. Pilih jawaban, lalu periksa skor dan pembahasan.</p><div id="quizBox"></div><button class="primary" onclick="gradeQuiz()">Nilai jawaban</button><div id="quizScore"></div></section>
+
+<section id="lkpd" class="page panel hide"><div class="eyebrow">Lembar kerja digital</div><h2>LKPD dan refleksi peserta didik</h2>
+<p>Isi LKPD berikut sebagai bukti proses belajar. Guru dapat menggunakannya sebagai bahan diskusi dan asesmen.</p>
+<label>Nama / kelompok</label><input id="lkName" placeholder="Nama dan kelompok">
+<label>Unit yang dikerjakan</label><select id="lkUnit"><option>Unit 1 — K3 dan dasar listrik</option><option>Unit 2 — Simbol dan komponen</option><option>Unit 3 — Rangkaian sakelar</option><option>Unit 4 — Perencanaan ruangan</option><option>Unit 5 — Pengujian dan troubleshooting</option><option>Unit 6 — Proyek akhir</option></select>
+<label>Tujuan dan ringkasan aktivitas</label><textarea id="lkGoal" rows="2" style="width:100%"></textarea>
+<label>Temuan / data / hasil simulasi</label><textarea id="lkData" rows="3" style="width:100%"></textarea>
+<label>Analisis dan kesimpulan</label><textarea id="lkAnalysis" rows="3" style="width:100%"></textarea>
+<label>Kompetensi yang sudah dikuasai</label><textarea id="lkMaster" rows="2" style="width:100%"></textarea>
+<label>Bagian yang masih perlu dilatih</label><textarea id="lkImprove" rows="2" style="width:100%"></textarea>
+<label>Refleksi K3 dan tanggung jawab</label><textarea id="lkK3" rows="2" style="width:100%"></textarea>
+<button class="primary" onclick="printLKPD()">Cetak / simpan LKPD PDF</button>
+</section>
+</main></div></div><footer>Media pendamping pembelajaran • Instalasi Penerangan Listrik XI TITL • 2026/2027</footer>
+<script>
+const pages=[...document.querySelectorAll('.page')];
+function show(id){pages.forEach(p=>p.classList.toggle('hide',p.id!==id));document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('active',b.dataset.page===id));window.scrollTo(0,0)}
+document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>show(b.dataset.page));
+function calcPower(){let v=+document.getElementById('volt').value,a=+document.getElementById('amp').value,t=+document.getElementById('hours').value;if(v<=0||a<0||t<0)return;let p=v*a,e=p*t;document.getElementById('powerout').innerHTML=`<b>Hasil konseptual:</b> P = V × I = ${p.toFixed(2)} W. E = P × t = ${e.toFixed(2)} Wh (${(e/1000).toFixed(3)} kWh).`}
+const safety=[{q:"Sebelum praktik dimulai, sumber dan status instalasi belum diketahui. Apa tindakan yang tepat?",o:["Langsung mencoba sakelar","Hentikan persiapan, laporkan, dan ikuti prosedur isolasi serta verifikasi oleh guru","Menganggap rangkaian aman karena lampu padam"],a:1,e:"Status sumber harus dipastikan melalui prosedur isolasi dan verifikasi yang ditetapkan, dengan pengawasan guru."},{q:"Alat ukur terlihat retak atau kabel ukurnya rusak.",o:["Tetap gunakan secara hati-hati","Pinjamkan ke kelompok lain","Jangan gunakan; beri tanda/laporkan kepada guru"],a:2,e:"Alat rusak harus dikeluarkan dari penggunaan dan dilaporkan."},{q:"Area kerja basah dan berantakan.",o:["Tunda praktik, amankan area, dan laporkan","Lanjutkan dengan alas kertas","Bekerja lebih cepat"],a:0,e:"Area harus aman, kering, tertata, dan bebas bahaya sebelum aktivitas."}];
+document.getElementById('safetyCase').innerHTML=safety.map((x,i)=>`<div class="card"><b>${i+1}. ${x.q}</b>${x.o.map((v,j)=>`<label class="option"><input type="radio" name="s${i}" value="${j}">${v}</label>`).join('')}</div>`).join('');
+function checkSafety(){let score=0,html='';safety.forEach((x,i)=>{let a=document.querySelector(`input[name=s${i}]:checked`);if(a&&+a.value===x.a)score++;html+=`<p>${i+1}. ${a&&+a.value===x.a?'✓ Tepat':'Perlu diperbaiki'} — ${x.e}</p>`});document.getElementById('safetyResult').innerHTML=`<div class="good"><b>Skor ${score}/${safety.length}</b>${html}</div>`}
+const matches=[["MCB","Perlindungan terhadap arus lebih"],["PE","Penghantar proteksi"],["Fitting","Dudukan/sambungan mekanis lampu"],["Conduit","Pelindung dan penata jalur penghantar"],["Sakelar seri","Kendali dua kelompok lampu dari satu lokasi"]];
+document.getElementById('matchGame').innerHTML=matches.map((m,i)=>`<div class="row"><b>${m[0]}</b><select id="m${i}"><option value="">Pilih fungsi…</option>${matches.map((n,j)=>`<option value="${j}">${n[1]}</option>`).join('')}</select></div>`).join('');
+function checkMatch(){let s=0;matches.forEach((m,i)=>{if(+document.getElementById('m'+i).value===i)s++});document.getElementById('matchResult').innerHTML=`<div class="${s===5?'good':'notice'}">Benar ${s}/5 pasangan.</div>`}
+function renderSwitch(){let type=document.getElementById('switchType').value,labels=type==='single'?['Kendali A']:type==='series'?['Kendali A','Kendali B']:type==='two'?['Lokasi A','Lokasi B']:['Lokasi A','Lokasi tengah','Lokasi B'];let n=labels.length;document.getElementById('switchControls').innerHTML=labels.map((l,i)=>`<div class="card"><b>${l}</b><label><input type="checkbox" id="sw${i}" onchange="updateLamps()"> Posisi aktif</label></div>`).join('');document.getElementById('switchExplain').textContent=type==='single'?'Sakelar tunggal mengubah keadaan satu kelompok lampu.':type==='series'?'Setiap tombol mengendalikan kelompok lampu yang berbeda.':type==='two'?'Perubahan salah satu kendali mengubah keadaan lampu dari dua lokasi.':'Kombinasi kendali dari tiga lokasi; perubahan posisi satu kendali dapat mengubah keadaan lampu.';document.getElementById('switchChallenge').textContent=type==='single'?'Amati satu kendali dan satu beban lampu.':type==='series'?'Amati apakah kedua kelompok dapat memiliki keadaan berbeda.':type==='two'?'Ubah posisi satu kendali, lalu kendali lainnya.':'Ubah posisi kendali satu per satu dan catat perubahan.';updateLamps()}
+function updateLamps(){let type=document.getElementById('switchType').value,vals=[...document.querySelectorAll('#switchControls input')].map(x=>x.checked),states=type==='single'?[vals[0]]:type==='series'?vals:type==='two'?[vals[0]!==vals[1]]:[vals.filter(Boolean).length%2===1];document.getElementById('lampStates').innerHTML=states.map((on,i)=>`<div class="card" style="text-align:center"><div style="font-size:40px">${on?'💡':'⚫'}</div><b>Kelompok lampu ${i+1}</b><div class="${on?'good':'muted'}">${on?'MENYALA (logika)':'PADAM (logika)'}</div></div>`).join('')}
+function saveObservation(){document.getElementById('obsSaved').textContent='Catatan tersedia di kolom; salin ke LKPD untuk disimpan.'}
+let points=[];function drawRoom(){let L=Math.max(2,Math.min(20,+document.getElementById('roomL').value||6)),W=Math.max(2,Math.min(20,+document.getElementById('roomW').value||4));let svg=document.getElementById('roomSvg');svg.innerHTML=`<rect x="80" y="25" width="440" height="260" rx="2" fill="#fff" stroke="#175cd3" stroke-width="4"/><text x="300" y="310" text-anchor="middle" font-size="14">${L} m</text><text x="40" y="160" text-anchor="middle" font-size="14" transform="rotate(-90 40 160)">${W} m</text><text x="300" y="15" text-anchor="middle" font-size="12" fill="#63728a">${document.getElementById('roomUse').value}</text><g id="dots"></g>`;svg.onclick=(e)=>{let r=svg.getBoundingClientRect(),x=(e.clientX-r.left)*600/r.width,y=(e.clientY-r.top)*330/r.height;if(x<80||x>520||y<25||y>285)return;points.push([x,y]);updateRoom()};updateRoom()}
+function updateRoom(){let g=document.getElementById('dots');if(!g)return;g.innerHTML=points.map((p,i)=>`<g onclick="event.stopPropagation();points.splice(${i},1);updateRoom()" style="cursor:pointer"><circle cx="${p[0]}" cy="${p[1]}" r="13" fill="#ffe08a" stroke="#a56a00" stroke-width="2"/><text x="${p[0]}" y="${p[1]+5}" text-anchor="middle" font-size="14">✦</text></g>`).join('');document.getElementById('lampCount').textContent=points.length;let l=+document.getElementById('roomL').value||6,w=+document.getElementById('roomW').value||4;document.getElementById('roomArea').textContent=(l*w).toFixed(1);document.getElementById('bom').innerHTML=`<table><tr><th>Item</th><th>Jumlah konseptual</th></tr><tr><td>Titik lampu pada denah</td><td>${points.length}</td></tr><tr><td>Kelompok kendali (rencana awal)</td><td>Perlu ditentukan sesuai kebutuhan</td></tr><tr><td>Sakelar, fitting, armatur, doos, conduit, klem, penghantar, pengaman</td><td>Ditentukan setelah gambar dan spesifikasi diverifikasi guru</td></tr></table>`}
+function downloadBoM(){let rows=[['Item','Jumlah/ketentuan'],['Titik lampu',points.length],['Luas ruang m2',(+document.getElementById('roomL').value)*(+document.getElementById('roomW').value)],['Komponen lain','Ditentukan melalui desain dan verifikasi guru']];let csv=rows.map(r=>r.join(',')).join('\n');let a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'}));a.download='BoM-konseptual.csv';a.click();URL.revokeObjectURL(a.href)}
+const faults={dark:{info:"Lampu tidak menyala. Penyebab mungkin mencakup sumber/pengaman, lampu, kendali, penghantar, atau sambungan. Pemeriksaan harus dimulai dari keselamatan dan dokumentasi.",opts:["Langsung membuka kotak sambung","Hentikan, amankan area, laporkan; guru memastikan isolasi dan pemeriksaan sesuai SOP","Menaikkan rating pengaman"],a:1,why:"Prioritas pertama adalah keselamatan dan pelaporan. Tidak melakukan pembongkaran atau pengujian mandiri."},trip:{info:"Proteksi berulang kali trip. Ini dapat menandakan gangguan yang perlu ditangani, bukan alasan untuk memaksa rangkaian aktif.",opts:["Reset berulang sampai menyala","Mengganti MCB dengan rating lebih besar","Hentikan, jangan aktifkan ulang, amankan area dan laporkan"],a:2,why:"Trip berulang harus dianggap sebagai indikasi gangguan. Personel kompeten melakukan diagnosis."},intermittent:{info:"Lampu berkedip/tidak stabil. Kemungkinan masalah dapat terkait lampu, kendali, sambungan, atau suplai.",opts:["Amati dari jarak aman, catat gejala, hentikan bila ada tanda bahaya dan laporkan","Menyentuh fitting untuk mengecek panas","Menggoyangkan kabel saat rangkaian aktif"],a:0,why:"Catat gejala tanpa menyentuh instalasi. Pemeriksaan fisik dilakukan setelah pengamanan sesuai SOP."},wrong:{info:"Kelompok lampu tidak sesuai tombol kendali. Bandingkan fungsi yang diharapkan dengan diagram dan catatan pemeriksaan.",opts:["Ubah sambungan saat sumber aktif","Catat perbedaan fungsi, hentikan dan minta guru memeriksa diagram pada kondisi aman","Abaikan karena lampu masih menyala"],a:1,why:"Analisis dimulai dari pembandingan dokumen dan kondisi, lalu pemeriksaan aman oleh guru."}};
+function showFault(){let f=faults[document.getElementById('faultCase').value];document.getElementById('faultInfo').textContent=f.info;document.getElementById('faultOptions').innerHTML=f.opts.map((o,i)=>`<label class="option"><input type="radio" name="fault" value="${i}">${o}</label>`).join('');document.getElementById('faultResult').innerHTML=''}
+function checkFault(){let f=faults[document.getElementById('faultCase').value],a=document.querySelector('input[name=fault]:checked');document.getElementById('faultResult').innerHTML=`<div class="${a&&+a.value===f.a?'good':'notice'}">${a&&+a.value===f.a?'Tepat.':'Belum tepat.'} ${f.why}</div>`}
+const qs=[["Tujuan utama instalasi penerangan adalah…",["Menyuplai titik penerangan secara fungsional dan aman","Menghilangkan kebutuhan proteksi","Mengganti semua instalasi daya"],0,"Instalasi penerangan menyuplai titik lampu melalui komponen dan pengaman."],["Besaran yang menyatakan laju penggunaan energi adalah…",["Tegangan","Daya","Tahanan"],1,"Daya menyatakan laju transfer/penggunaan energi."],["Simbol dan legenda gambar berguna untuk…",["Memperindah gambar","Mengidentifikasi komponen dan hubungan sesuai gambar kerja","Menentukan warna ruangan"],1,"Legenda membantu pembaca menafsirkan simbol secara konsisten."],["Komponen proteksi arus lebih pada rangkaian adalah…",["MCB","Fitting","Armatur"],0,"MCB merupakan perangkat proteksi arus lebih sesuai spesifikasinya."],["Sakelar seri digunakan untuk…",["Mengendalikan dua kelompok lampu terpisah dari satu lokasi","Mengendalikan satu lampu dari tiga lokasi","Mengukur arus"],0,"Sakelar seri mengendalikan dua kelompok lampu."],["Satu lampu dikendalikan dari dua lokasi umumnya menggunakan konsep…",["Sakelar tunggal","Sakelar tukar","Stop kontak"],1,"Rangkaian tukar memungkinkan kendali dari dua lokasi."],["Sakelar silang dipadukan dengan sakelar tukar untuk kendali dari…",["Satu lokasi","Dua lokasi saja","Tiga lokasi"],2,"Sakelar silang digunakan pada pengendalian dari tiga lokasi."],["Sebelum menentukan komponen proyek, peserta didik perlu…",["Menyusun denah/diagram dan kebutuhan ruang","Membeli bahan secara acak","Melewati pemeriksaan K3"],0,"Rancangan dan daftar kebutuhan mendasari pemilihan komponen."],["Jika MCB trip berulang, tindakan yang tepat adalah…",["Menaikkan rating MCB sendiri","Mengaktifkan berulang","Menghentikan aktivitas dan melapor untuk pemeriksaan kompeten"],2,"Proteksi trip berulang adalah tanda gangguan; jangan memaksa rangkaian aktif."],["Pemeriksaan sebelum uji fungsi mencakup…",["Pemeriksaan visual, kontinuitas, isolasi dan polaritas sesuai SOP","Hanya memastikan lampu terlihat bagus","Menguji dengan menyentuh penghantar"],0,"RPS memuat pemeriksaan visual, kontinuitas, tahanan isolasi, polaritas dan uji fungsi terkontrol."]];
+document.getElementById('quizBox').innerHTML=qs.map((q,i)=>`<div class="card"><b>${i+1}. ${q[0]}</b>${q[1].map((a,j)=>`<label class="option"><input type="radio" name="q${i}" value="${j}">${a}</label>`).join('')}</div>`).join('');
+function gradeQuiz(){let score=0,out='';qs.forEach((q,i)=>{let a=document.querySelector(`input[name=q${i}]:checked`),ok=a&&+a.value===q[2];if(ok)score++;out+=`<p><b>${i+1}. ${ok?'Benar':'Perlu belajar lagi'}.</b> ${q[3]}</p>`});document.getElementById('quizScore').innerHTML=`<div class="good"><div class="stat">${score*10}/100</div><b>Skor latihan</b>${out}</div>`}
+function printFields(ids,title){let body=ids.map(([id,label])=>`<h3>${label}</h3><p>${(document.getElementById(id).value||'—').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g,'<br>')}</p>`).join('');let w=window.open('','_blank');w.document.write(`<html><head><title>${title}</title><style>body{font:14px Arial;padding:35px;color:#18253a}h1{color:#175cd3}h3{margin-bottom:3px}p{border-bottom:1px solid #ddd;padding:5px 0 12px;min-height:20px}</style></head><body><h1>${title}</h1><p>Instalasi Penerangan Listrik XI TITL • SMK Negeri 420 Kopo</p>${body}<script>window.print()<\/script></body></html>`);w.document.close()}
+function printProject(){printFields([['projName','Nama proyek'],['projGroup','Kelompok'],['projNeed','Kebutuhan ruang'],['projDesign','Ringkasan rancangan'],['projBom','Daftar bahan awal'],['projSafety','Rencana K3'],['projTest','Catatan pemeriksaan']],'Proposal Proyek Instalasi Penerangan')}
+function printLKPD(){printFields([['lkName','Nama/kelompok'],['lkUnit','Unit'],['lkGoal','Tujuan dan aktivitas'],['lkData','Temuan/data'],['lkAnalysis','Analisis dan kesimpulan'],['lkMaster','Kompetensi dikuasai'],['lkImprove','Perlu dilatih'],['lkK3','Refleksi K3']],'LKPD Instalasi Penerangan')}
+renderSwitch();drawRoom();showFault();
+</script></body></html>
